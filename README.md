@@ -21,7 +21,8 @@ we first had to create six different tables from CSV files in that specific orde
 
      -- List the employee number, last name, first name, sex, and salary of each employee.
 
-[Screenshot 2024-08-28 at 7.47.15 PM.pdf](https://github.com/user-attachments/files/16790054/Screenshot.2024-08-28.at.7.47.15.PM.pdf)
+
+[q1 - challenge9.pdf](https://github.com/user-attachments/files/16790062/q1.-.challenge9.pdf)
 
 
 
