@@ -18,6 +18,7 @@ we first had to create six different tables from CSV files in that specific orde
   DANA ANALYSIS
 
   In this part we had to answer a few questions. 
+  I have added a screenshot of the first 10 rows of the results to give you an idea of how the table looks like.
 
   1) List the employee number, last name, first name, sex, and salary of each employee.
 
