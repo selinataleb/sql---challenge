@@ -19,63 +19,56 @@ we first had to create six different tables from CSV files in that specific orde
 
   In this part we had to answer a few questions. 
 
-     -- List the employee number, last name, first name, sex, and salary of each employee.
+  1) List the employee number, last name, first name, sex, and salary of each employee.
 
 
 [q1 - challenge9.pdf](https://github.com/user-attachments/files/16790062/q1.-.challenge9.pdf)
 
 
 
+2) List the first name, last name, and hire date for the employees who were hired in 1986.
+
+[q2- challenge9.pdf](https://github.com/user-attachments/files/16790075/q2-.challenge9.pdf)
 
 
--- List the first name, last name, and hire date for the employees who were hired in 1986.
+3) List the manager of each department along with their department number, department name, employee number, last name, and first name.
 
-SELECT first_name, last_name, hire_date
-FROM employees
-WHERE hire_date BETWEEN '1986-01-01' AND '1986-12-31';
-
---List the manager of each department along with their department number, department name, employee number, last name, and first name.
-
-SELECT dm.dept_no, d.dept_name, dm.emp_no, e.last_name, e.first_name
-FROM dept_manager as dm
-JOIN departments d ON dm.dept_no = d.dept_no
-JOIN employees e ON dm.emp_no = e.emp_no;
-
---List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
-
-SELECT de.dept_no, de.emp_no, e.last_name, e.first_name, d.dept_name
-FROM dept_emp de
-JOIN employees e ON de.emp_no = e.emp_no
-JOIN departments d ON de.dept_no = d.dept_no;
-
---List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
-
-SELECT first_name, last_name, sex
-FROM employees
-WHERE first_name = 'Hercules' AND last_name LIKE 'B%';
+[q3 - challenge9.pdf](https://github.com/user-attachments/files/16790103/q3.-.challenge9.pdf)
 
 
---List each employee in the Sales department, including their employee number, last name, and first name.
 
-SELECT e.emp_no, e.last_name, e.first_name
-FROM dept_emp de
-JOIN employees e ON de.emp_no = e.emp_no
-JOIN departments d ON de.dept_no = d.dept_no
-WHERE d.dept_name = 'Sales';
+4) List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
+   
+<img width="764" alt="q4 - challenge9" src="https://github.com/user-attachments/assets/60de2191-6ad6-4456-b117-72e08b54f71c">
 
---List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
 
-SELECT e.emp_no, e.last_name, e.first_name, d.dept_name
-FROM dept_emp de
-JOIN employees e ON de.emp_no = e.emp_no
-JOIN departments d ON de.dept_no = d.dept_no
-WHERE d.dept_name IN ('Sales', 'Development');
+5) List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
+<img width="487" alt="q5 - challenge9" src="https://github.com/user-attachments/assets/210d5268-cb5d-4624-8584-47e0682a558e">
 
---List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
 
-SELECT last_name, COUNT(*) AS frequency
-FROM employees
-GROUP BY last_name
-ORDER BY frequency DESC;
+6) List each employee in the Sales department, including their employee number, last name, and first name.
+<img width="477" alt="q6 - challenge9" src="https://github.com/user-attachments/assets/94c6bbea-6734-4386-8fce-98d9e36f8c95">
+
+
+
+7) List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
+
+<img width="598" alt="q7- challenge9" src="https://github.com/user-attachments/assets/099987c7-1547-4aea-830e-0219caa76cb0">
+
+
+8) List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
+9) 
+<img width="317" alt="q8 - challenge9" src="https://github.com/user-attachments/assets/9bae1ff5-266e-4603-883f-1fb5aacb40f9">
+
 
 We can find this file in the EmployeeSQL folder, in the datanalysisq.sql file. 
+
+DATA MODELING 
+
+![QuickDBD-export](https://github.com/user-attachments/assets/7013a13c-3e2c-43a9-bf18-256fad93c6ab)
+
+this diagram visually represents the relationship we have between tables. The <- signal means many to one relationships. 
+The key logo represents our PRIMARY KEYS.
+The arrows going from variable to another represent the link between the tables which means our FOREIGN KEYS. 
+
+
