@@ -21,19 +21,19 @@ we first had to create six different tables from CSV files in that specific orde
 
   1) List the employee number, last name, first name, sex, and salary of each employee.
 
-
-[q1 - challenge9.pdf](https://github.com/user-attachments/files/16790062/q1.-.challenge9.pdf)
-
+<img width="644" alt="q1 - chllenge9" src="https://github.com/user-attachments/assets/7b85144a-4d07-4d68-9ee5-0ed559e2f2b1">
 
 
 2) List the first name, last name, and hire date for the employees who were hired in 1986.
 
-[q2- challenge9.pdf](https://github.com/user-attachments/files/16790075/q2-.challenge9.pdf)
+<img width="442" alt="q2 - challenge9" src="https://github.com/user-attachments/assets/bd2f5804-d11a-4c62-a165-d5d3eaea4416">
+
 
 
 3) List the manager of each department along with their department number, department name, employee number, last name, and first name.
 
-[q3 - challenge9.pdf](https://github.com/user-attachments/files/16790103/q3.-.challenge9.pdf)
+
+<img width="755" alt="q3 - challenge9" src="https://github.com/user-attachments/assets/e3830fd8-05b9-40cc-9ea1-942b2a274904">
 
 
 
